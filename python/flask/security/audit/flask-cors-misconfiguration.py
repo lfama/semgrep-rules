@@ -20,8 +20,8 @@ def get_data():
 
 
 @app.route('/special-data', methods=['GET'])
-# ruleid: flask-cors-misconfiguration
 # CORS applied only to this route
+# ruleid: flask-cors-misconfiguration
 @cross_origin(supports_credentials=True, origins="*")
 def get_special_data():
     # This route uses the CORS decorator for route-specific CORS settings
